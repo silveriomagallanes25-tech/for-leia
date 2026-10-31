@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Letter To You,BabY Leia</title>
+    <link rel="icon" type="image/png" href="Pixel-Heart.png">
+
+    <!-- Google Pixel Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Section 1: Home Area (Photos, Intro & Song Player) -->
+    <section id="homeSection" class="page-section">
+        <div class="content">
+            <h1>Welcome, Leia :3 </h1>
+            <br>
+            <h3>Enjoy the music and explore the photo gallery as you scroll bb.</h3>
+            <br>
+            <!-- Song Player -->
+               <p>Last Day On Earth - Greenday</p>
+            <div class="audio-player-container">
+                <audio id="bgMusic" controls loop>
+                 
+                    <source src="Vietsub Last Night On Earth - Green Day Lyrics Video.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Photo Grid Container (Holds 4 to 8 photos neatly in lines) -->
+            <div class="photo-grid">
+                <!-- Photo 1 -->
+                <div class="photo-card"><img src="pretty1.jpg" alt="Photo 1"></div>
+                <!-- Photo 2 -->
+                <div class="photo-card"><img src="kitty-dance.gif" alt="Photo 2"></div>
+                <!-- Photo 3 -->
+                <div class="photo-card"><img src="pretty2.jpg" alt="Photo 3"></div>
+                <!-- Photo 4 -->
+                <div class="photo-card"><img src="scuba-cat-scuba-dance.gif" alt="Photo 4"></div>
+                <!-- Photo 5 -->
+                <div class="photo-card"><img src="rocket.jpg" alt="Photo 5"></div>
+                <!-- Photo 6 -->
+                <div class="photo-card"><img src="pretty3.jpg" alt="Photo 6"></div>
+                <!-- Photo 7 -->
+                <div class="photo-card"><img src="cat.jpg" alt="Photo 7"></div>
+                <!-- Photo 8 -->
+                <div class="photo-card"><img src="prettyy.jpg" alt="Photo 8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Letter Section -->
+    <section id="letterSection" class="page-section">
+        <h1>!! CLICK TO OPEN OuO!! </h1>
+
+        <div class="letter-wrapper">
+            <!-- The Clickable Image -->
+            <img src="LVletter.jpg" alt="Open Letter" id="letterImg" class="letter-img" onclick="toggleLetter()">
+
+            <!-- The Letter Box (Centered and hidden by default) -->
+            <div id="letterBox" class="letter-box">
+                <button class="close-btn" onclick="toggleLetter()">×</button>
+                <p><strong>Dearest Langga,</strong></p>
+                <p>
+                    Leai, Yes... you might be wondering why it took me a month to confess to you... well I was making this, this is the reason. The reason it took me a lot of days and a lot of days I crammed this , one of the very reason too is because of my tight schedule sa work and school ko, haha, sorry about that. You might be wondering if I'm crazy? Yes. Am I doing too much? Yes. Am I doing this for you? That's a yes, bb. All is yes, bb, as long as it is you my bb, I will always say  Y E S, hehe. To be honest, bb, I've been thinking about you everyday and so much that it's been in my mind creating ideas and ways to make it special and a wow factor for you. And bb... I've been thinking this too... Leia, baby, my langga, I love you so much, like super super, I really love you, bb.
+                </p>
+            
+                <p>
+                    Leai, will you be my girlfriend?, my partner for life?, my lover, my ride or die?, my Luna to my Sol? Baby, I love you so much it hurts so much, bb, so much in my heart it doesn't fit. You bring so much comfort and happiness to me, bb. It also brought mine back, too; you made me smile again. And to be honest, it made me cry, HAHA... Langga, you made me cry after many years—it felt so genuine. Your love is genuine. I felt peace and happiness with you, bb. I've been so much loved by you, bb, I'm so happy to have you. And bb, I'm always here for you :3 . I know I may not be much or Im not a perfect man for you, but what I can promise and say to you is that I will always be beside you, to comfort, to give hugs, to give kisses, to always listen to you, a shoulder for you cry on and a person that will make you smile and make u feel love the way how you make me feel.I am grateful to have met such an amazing person like you and you mean the world to me Leia, I Will Never Leave You Leai remember that okay... . And Soon we will be together, my langga. I know we are far apart because of where we live, but that's not gonna stop me from loving you. I love you, Leai.... I love you .
+                </p>
+                <p><strong>Ur Baby,<br>Sonny</strong></p>
+                <br>
+                <p>
+                  P.S (I know its is really grammar or really scattered around like my word can't comprehend what i feel about u ,but.. I hope you enjoyed the letter Langga)
+                </p>
+                <br>
+                <p><strong>[Scroll down till the last part ;) ]</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: About Section -->
+    <section id="aboutSection" class="page-section">
+        <div class="content">
+            <h1>About</h1>
+            <br>
+            <h2>This website was created to make it special just for you . For you to enjoy and feel every bit of how much He loves you , How much He cares for you , How Happy He is to have you Leia . This website was design to match your favorite color , The comfiness , The vibe and energy He see in you .</h2>
+       
+        </div>
+    </section>
+
+    <!-- Section 4: Agreement Section -->
+    <section id="blankSection" class="page-section">
+        <div class="content">
+            
+            <!-- Question Card -->
+            <div id="proposalCard" class="proposal-card">
+                <h2>Will you accept me as your lover , boyfriend, hubby?</h2>
+                <div class="button-group">
+                    <button id="yesBtn" class="prop-btn" onclick="handleYes()">Yes</button>
+                    <button id="noBtn" class="prop-btn" onclick="handleNo()">No</button>
+                </div>
+            </div>
+
+            <!-- Celebration Card (Revealed on Yes) -->
+            <div id="hoorayCard" class="hooray-card" style="display: none;">
+                <h1>HOORAY!! 🎉</h1>
+                <!-- Replace 'hooray.jpg' with your celebration photo -->
+                <img src="kitty-dance.gif" alt="Hooray Celebration" class="hooray-img">
+                <h1>You're my GF now hehe, I LOVE YOU :3</h1>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Link to external JavaScript file -->
+    <script src="JV.js"></script>
+
+</body>
+</html>
